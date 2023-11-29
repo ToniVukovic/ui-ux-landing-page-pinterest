@@ -1,0 +1,346 @@
+@font-face {
+  font-family: "FiraRegular"; /* Give a name to your font */
+  src: url("/font/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "FiraBold"; /* Give a name to your font */
+  src: url("/font/FiraSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "FiraBlack"; /* Give a name to your font */
+  src: url("/font/FiraSans-Black.ttf");
+}
+
+@font-face {
+  font-family: "FiraSans"; /* Give a name to your font */
+  src: url("/font/FiraSans-Black.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* display: flex;
+  justify-content: center; */
+  background-color: #f5f5f5;
+  color: #180e4d;
+}
+
+.intro-wrap,
+.solutions-wrap,
+.about-wrap {
+  padding: 0 20px;
+  @media (min-width: 768px) {
+    padding: 0 20px;
+    margin: 40px 150px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0;
+    margin: 40px 100px 40px 280px;
+  }
+}
+
+.intro {
+  margin-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  @media (min-width: 768px) {
+    padding-bottom: 150px;
+    gap: 0;
+    background-image: url("/images/dva-zuta.svg"), url("/images/trokut-z.svg"),
+      url("/images/dots3.svg"), url("/images/plavi.svg"),
+      url("/images/dots1.svg"), url("/images/dots2.svg");
+    background-size: 150px, 25px, 75px, 25px, 100px, 100px;
+    background-position: 7% 50%, 75% 10%, 10% 5%, 70% 70%, 85% 70%, 75% 55%;
+    background-repeat: no-repeat;
+  }
+}
+
+.intro-wrap {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+h1 {
+  font-family: "FiraBlack", sans-serif;
+  font-size: 55px;
+  max-width: 380px;
+  line-height: 70px;
+}
+
+.intro-accent {
+  color: #00b4ff;
+}
+
+.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.intro-small-text {
+  margin-top: 35px;
+  font-family: "FiraRegular";
+  max-width: 450px;
+  line-height: 25px;
+}
+
+.cta {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+}
+
+.hire-me {
+  transition: all 0.3s;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #00b4ff;
+  color: #f8f8f8;
+  font-family: "FiraBold";
+  border: none;
+  border-radius: 4px;
+  padding: 10px 7px;
+  width: 90px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  @media (min-width: 425px) {
+    width: 120px;
+  }
+}
+
+.hire-me:hover {
+  background-color: #f8f8f8;
+  color: #00b4ff;
+}
+
+.lets-chat {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-family: "FiraBold";
+  color: #00b4ff;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  @media (min-width: 768px) {
+    gap: 10px;
+  }
+}
+
+.chat-icon {
+  width: 25px;
+}
+
+.rodin {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.solutions {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-color: #e8ebec;
+  /* border: 1px solid green; */
+}
+
+.solutions-title-box {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.solutions-title-box p {
+  color: #00b4ff;
+  font-family: "FiraBold";
+  font-size: 20px;
+}
+
+.solutions-title-box h2 {
+  font-family: "FiraBlack";
+  font-size: 40px;
+}
+
+.card-container {
+  max-width: 1000px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  background-color: #f5f5f5;
+  max-width: 320px;
+  padding: 45px 12px 45px 30px;
+  border-radius: 14px;
+}
+
+.card img {
+  width: 60px;
+  margin-bottom: 25px;
+}
+
+.card h3 {
+  font-family: "FiraBlack";
+}
+
+.card p {
+  font-family: "FiraRegular";
+  line-height: 25px;
+}
+
+.numbers-container {
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+  max-width: 900px;
+}
+
+.numbers-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.numbers-box img {
+  width: 50px;
+}
+
+.numbers-inner {
+  max-width: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.numbers-inner h4 {
+  font-family: "FiraRegular";
+  font-size: 35px;
+}
+
+.numbers-inner span {
+  font-family: "FiraRegular";
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  background-color: #f5f5f5;
+  background-image: url("/images/dva-kruga.svg");
+  background-size: 250px;
+  background-position: 9% 19%;
+  background-repeat: no-repeat;
+  /* padding-bottom: 80px; */
+}
+
+.about-wrap {
+  padding-top: 120px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  @media (min-width: 768px) {
+    background-image: url("/images/dots3.svg"), url("/images/dots3.svg");
+    background-size: 80px, 80px;
+    background-position: 100% 90%, 100% 70%;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 1240px) {
+    gap: 130px;
+    padding-bottom: 70px;
+  }
+}
+
+.david {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.about-title-box {
+  max-width: 490px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.about-title-box p {
+  color: #00b4ff;
+  font-family: "FiraBold";
+  font-size: 20px;
+}
+
+.about-title-box h2 {
+  font-family: "FiraBlack";
+  font-size: 40px;
+}
+
+.about-title-box h3 {
+  margin: 20px 0;
+  font-family: "FiraBlack";
+  font-size: 20px;
+}
+
+ol {
+  font-size: 20px;
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+  font-family: "FiraRegular";
+  line-height: 40px;
+}
+
+.potpis-box {
+  display: flex;
+  justify-content: center;
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.potpis {
+  margin-top: 10px;
+  transform: rotate(-2deg);
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+section {
+  @media (min-width: 1700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
