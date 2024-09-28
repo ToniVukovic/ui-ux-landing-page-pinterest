@@ -1,21 +1,21 @@
 @font-face {
   font-family: "FiraRegular";
-  src: url("/font/FiraSans-Regular.ttf");
+  src: url("font/FiraSans-Regular.ttf");
 }
 
 @font-face {
   font-family: "FiraBold";
-  src: url("/font/FiraSans-Bold.ttf");
+  src: url("font/FiraSans-Bold.ttf");
 }
 
 @font-face {
   font-family: "FiraBlack";
-  src: url("/font/FiraSans-Black.ttf");
+  src: url("font/FiraSans-Black.ttf");
 }
 
 @font-face {
   font-family: "FiraSans";
-  src: url("/font/FiraSans-Black.ttf");
+  src: url("font/FiraSans-Black.ttf");
 }
 
 * {
